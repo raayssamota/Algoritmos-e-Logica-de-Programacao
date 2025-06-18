@@ -1,19 +1,16 @@
 programa {
   funcao inicio() {
-    //Declaração de Variáveis 
-    inteiro Numero,Centena,Dezena,Unidade,Invertido
+    //Declaração de Variáveis
+    real Celsius,Fahreinheit
 
     //Entrada de Dados
-    escreva("digite um numero de tres digitos")
-    leia(Numero)
+    escreva("Informe a temperatura em Celsius")
+    leia(Celsius)
 
     //Processamento
-    Centena=Numero/100
-    Dezena= (Numero %100)/100
-    Unidade=Numero %10
-    Invertido=Unidade*100+Dezena*10+Centena
+    Fahreinheit=(Celsius*9/5)+32
 
-    //Saída de Dados
-    escreva("O numero invertido é", Invertido)
+    //Saída de dados 
+    escreva("A temperatura em Fahreinheit é", Fahreinheit)
   }
 }
